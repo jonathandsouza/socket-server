@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CHAT APP</title>
+
+	<script src="/bower_components/angular/angular.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+
+
+	<script src="/app/front-end/pages/home/core.js"></script>
+	<script src="/app/front-end/pages/core.js"></script>
+
+	<script src="/app/front-end/modules/socket/core.js"></script>
+	<script src="/app/front-end/modules/socket/socket.js"></script>
+	<script src="/app/front-end/modules/socket/dispatcher.js"></script>
+	<script src="/app/front-end/modules/core.js"></script>
+
+	<script src="/app/front-end/app.js"></script>
+
+
+</head>
+<body ng-app="chat">
+
+<div ng-controller="MainController as ctrl">
+
+	<input type="text" ng-model="ctrl.user.id">
+	<button ng-click="ctrl.connect()">connect</button>
+
+	<br/>
+	<br/>
+	<br/>
+	<br/>
+
+	<input type="text" ng-model="ctrl.chat.message">
+	<input type="text" ng-model="ctrl.chat.to">
+	<button type="text" ng-click="ctrl.chat.send()">SEND...</button>
+
+</div>
+
+</body>
+</html>

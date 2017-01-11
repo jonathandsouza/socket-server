@@ -1,0 +1,18 @@
+{
+  "EVENTS": {
+	"CONNECTION": {
+	  "CONNECT": "connection",
+	  "DISCONNECT": "disconnect"
+	},
+	"USER": {
+	  "INIT": "USER_INITIALIZE"
+	},
+	"CHAT": {
+	  "SEND": "CHAT_SEND",
+	  "RECEIVE": "CHAT_RECEIVE",
+	  "TYPING": "CHAT_TYPING",
+	  "USER_JOINED": "CHAT_USER_JOINED",
+	  "USER_LEFT": "CHAT_USER_LEFT"
+	}
+  }
+}
